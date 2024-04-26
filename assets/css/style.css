@@ -1,10 +1,4 @@
-/**
-* Template Name: MyResume
-* Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
-* Updated: Mar 17 2024 with Bootstrap v5.3.3
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
+
 
 /*--------------------------------------------------------------
 # General
@@ -124,8 +118,7 @@ h6 {
   bottom: 0;
   z-index: 9997;
   transition: all 0.5s;
-  padding-right: 50px;
-  padding-left: 10px;
+  padding:25px;
   overflow-y: auto;
 }
 
@@ -140,7 +133,8 @@ h6 {
 
 @media (min-width: 991px) {
   #main {
-    margin-left: 0px;
+    background: #000;
+    margin-left: 100px;
   }
 
 
