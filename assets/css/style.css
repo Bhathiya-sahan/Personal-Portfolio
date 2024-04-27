@@ -656,7 +656,7 @@ section {
 
 .portfolio .portfolio-wrap::before {
   content: "";
-  background: rgba(255, 255, 255, 0.7);
+  background: rgba(0, 0, 0, 0.926);
   position: absolute;
   left: 30px;
   right: 30px;
@@ -691,8 +691,8 @@ section {
   position: absolute;
   top: 35px;
   left: 35px;
-  border-top: 3px solid #d7dce1;
-  border-left: 3px solid #d7dce1;
+  border-top: 3px solid #FFD700;
+  border-left: 3px solid #FFD700;
   transition: all 0.5s ease 0s;
   z-index: 9994;
 }
@@ -705,20 +705,20 @@ section {
   position: absolute;
   bottom: 35px;
   right: 35px;
-  border-bottom: 3px solid #d7dce1;
-  border-right: 3px solid #d7dce1;
+  border-bottom: 3px solid #FFD700;
+  border-right: 3px solid #FFD700;
   transition: all 0.5s ease 0s;
   z-index: 9994;
 }
 
 .portfolio .portfolio-wrap .portfolio-info h4 {
   font-size: 20px;
-  color: #45505b;
+  color: #00FF21;
   font-weight: 600;
 }
 
 .portfolio .portfolio-wrap .portfolio-info p {
-  color: #45505b;
+  color: #ffffff;
   font-size: 14px;
   text-transform: uppercase;
   padding: 0;
@@ -731,7 +731,7 @@ section {
 }
 
 .portfolio .portfolio-wrap .portfolio-links a {
-  color: #45505b;
+  color: #00FF21;
   margin: 0 2px;
   font-size: 28px;
   display: inline-block;
@@ -739,7 +739,7 @@ section {
 }
 
 .portfolio .portfolio-wrap .portfolio-links a:hover {
-  color: #148af9;
+  color: #FFD700;
 }
 
 .portfolio .portfolio-wrap:hover::before {
@@ -833,7 +833,68 @@ section {
 }
 
 
+/*--------------------------------------------------------------
+# ACHIEVEMENTS
+--------------------------------------------------------------*/
+.work-box {
+  margin-bottom: 3rem;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  background-color: #000000;
+}
 
+.work-box:hover img {
+  transform: scale(1.3);
+}
+
+.work-img {
+  display: block;
+  overflow: hidden;
+}
+
+.work-img img {
+  transition: all 1s;
+}
+
+.work-content {
+  padding: 2rem 3% 1rem 4%;
+}
+
+.work-content .w-more {
+  color: #fff;
+  font-size: 0.8rem;
+}
+
+.work-content .w-more .w-ctegory {
+  color: #fff;
+}
+
+.work-content .w-more .w-date {
+  color: #FFD700;
+}
+
+.work-content .w-like {
+  font-size: 2.5rem;
+  color: #00FF21;
+  float: right;
+}
+
+.work-content .w-like a {
+  color: #fff;
+  transition: 0.3s;
+}
+
+.work-content .w-like a:hover{
+  color: #FFD700;
+}
+
+.work-content .w-like .num-like {
+  font-size: 0.7rem;
+}
+
+.w-title {
+  font-size: 1.2rem;
+}
 
 
 /*--------------------------------------------------------------
