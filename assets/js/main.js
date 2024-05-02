@@ -260,9 +260,64 @@
     })
   });
 
+
+
+
+
+   /**
+   * photo isotope and filter
+   */
+   window.addEventListener('load', () => {
+    let photoContainer = select('.photo-container');
+    if (photoContainer) {
+      let photoIsotope = new Isotope(photoContainer, {
+        itemSelector: '.photo-item'
+      });
+
+      let photoFilters = select('#photo-flters li', true);
+
+      on('click', '#photo-flters li', function(e) {
+        e.preventDefault();
+        photoFilters.forEach(function(el) {
+          el.classList.remove('filter-active');
+        });
+        this.classList.add('filter-active');
+
+       photoIsotope.arrange({
+          filter: this.getAttribute('data-filter')
+        });
+        photoIsotope.on('arrangeComplete', function() {
+          AOS.refresh()
+        });
+      }, true);
+    }
+
+  });
+
+
+
+
+  /**
+   * photo details slider
+   */
+  new Swiper('.photo-details-slider', {
+    speed: 400,
+    loop: true,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+      clickable: true
+    }
+  });
+
   /**
    * Initiate Pure Counter 
    */
   new PureCounter();
 
 })()
+
