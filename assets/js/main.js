@@ -196,7 +196,6 @@
 
 
 
-
   /**
    * Initiate portfolio lightbox 
    */
@@ -211,6 +210,7 @@
     selector: '.portfolio-details-lightbox',
     width: '90%',
     height: '90vh'
+
   });
 
   /**
